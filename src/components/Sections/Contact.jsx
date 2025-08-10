@@ -3,8 +3,8 @@ import styled from "styled-components";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 // Assets
-import ContactImg1 from "../../assets/img/contact-1.png";
-import ContactImg2 from "../../assets/img/contact-2.png";
+// import ContactImg1 from "../../assets/img/contact-1.png";
+// import ContactImg2 from "../../assets/img/contact-2.png";
 import ContactImg3 from "../../assets/img/contact.png";
 
 export default function Contact() {
