@@ -9,6 +9,7 @@
   --ink-soft:#3D5A66;
   --foam:#F2F7F6;
   --foam-soft:#A9C4C9;
+  --fin:#0E3140;
   --gutter:clamp(16px,5vw,64px);
   --measure:66ch;
   color-scheme:light;
@@ -19,6 +20,7 @@
     --shallows:#13404D;
     --ink:#E8F0EF;
     --ink-soft:#A9C4C9;
+    --fin:#A9C4C9;
     color-scheme:dark;
   }
 }
@@ -27,6 +29,7 @@
   --shallows:#13404D;
   --ink:#E8F0EF;
   --ink-soft:#A9C4C9;
+  --fin:#A9C4C9;
   color-scheme:dark;
 }
 
@@ -348,3 +351,17 @@ html[data-tone="dark"] .gauge{--g-ink:#F2F7F6;--g-soft:#A9C4C9;--g-line:rgba(242
   font-variation-settings:"wdth" 106;font-weight:700;
 }
 .highlights p{margin:0;color:var(--muted);font-size:.98rem}
+
+/* ---------- booking links ---------- */
+.step-link{display:inline-block;margin-top:.7rem;color:var(--foam)}
+.book{margin-top:2rem;display:grid;gap:10px;justify-items:start}
+.book .hint{font-size:.88rem;color:var(--foam-soft);margin:0}
+
+/* header logo follows the colour scheme */
+.brand .logo-for-dark{display:none}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .brand .logo-for-light{display:none}
+  :root:not([data-theme="light"]) .brand .logo-for-dark{display:block}
+}
+:root[data-theme="dark"] .brand .logo-for-light{display:none}
+:root[data-theme="dark"] .brand .logo-for-dark{display:block}
