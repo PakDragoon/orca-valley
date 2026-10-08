@@ -29,7 +29,7 @@ export default function Contact() {
         </p>
 
         <div className="contact-grid">
-          <div>
+          <div className="contact-info">
             <a className="mail" href={`mailto:${EMAIL}?subject=Project%20enquiry`}>{EMAIL}</a>
             <dl className="facts">
               <div>
