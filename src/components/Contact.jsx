@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Logo from "./Logo";
-import { EMAIL, PHONE_DISPLAY, PHONE_TEL, LINKEDIN, FACEBOOK } from "../data/contact";
+import { EMAIL, PHONE_DISPLAY, PHONE_TEL, LINKEDIN, FACEBOOK, BOOKING_URL, bookingLinkProps } from "../data/contact";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", company: "", message: "" });
@@ -32,6 +32,12 @@ export default function Contact() {
         <div className="contact-grid">
           <div className="contact-info">
             <a className="mail" href={`mailto:${EMAIL}?subject=Project%20enquiry`}>{EMAIL}</a>
+            {BOOKING_URL && (
+              <div className="book">
+                <a className="btn" {...bookingLinkProps()}>Book a discovery call</a>
+                <p className="hint">Pick a time that suits you. We'll send a video call link.</p>
+              </div>
+            )}
             <dl className="facts">
               <div>
                 <dt>Phone and WhatsApp</dt>

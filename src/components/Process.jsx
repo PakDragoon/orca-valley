@@ -1,4 +1,5 @@
 import React from "react";
+import { bookingLinkProps } from "../data/contact";
 
 const steps = [
   ["Discovery call", "We learn the problem, the data you have, and what a good result looks like for your team."],
@@ -17,11 +18,14 @@ export default function Process() {
           <p className="lede">You see results on your own data before committing to a full build.</p>
         </div>
         <ol className="steps">
-          {steps.map(([title, text]) => (
+          {steps.map(([title, text], i) => (
             <li key={title}>
               <div>
                 <h3>{title}</h3>
                 <p>{text}</p>
+                {i === 0 && (
+                  <a className="link step-link" {...bookingLinkProps()}>Book a discovery call</a>
+                )}
               </div>
             </li>
           ))}

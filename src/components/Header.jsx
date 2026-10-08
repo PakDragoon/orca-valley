@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "./Logo";
-import { EMAIL } from "../data/contact";
+import { bookingLinkProps } from "../data/contact";
 
 export default function Header() {
   return (
@@ -23,7 +23,7 @@ export default function Header() {
           engineers in Lahore, working with businesses that want AI to do real work.
         </p>
         <div className="actions">
-          <a className="btn" href={`mailto:${EMAIL}?subject=Discovery%20call%20with%20Orca%20Valley`}>
+          <a className="btn" {...bookingLinkProps()}>
             Book a discovery call
           </a>
           <a className="link" href="#work">See what we've built</a>

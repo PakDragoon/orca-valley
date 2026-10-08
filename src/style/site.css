@@ -348,3 +348,8 @@ html[data-tone="dark"] .gauge{--g-ink:#F2F7F6;--g-soft:#A9C4C9;--g-line:rgba(242
   font-variation-settings:"wdth" 106;font-weight:700;
 }
 .highlights p{margin:0;color:var(--muted);font-size:.98rem}
+
+/* ---------- booking links ---------- */
+.step-link{display:inline-block;margin-top:.7rem;color:var(--foam)}
+.book{margin-top:2rem;display:grid;gap:10px;justify-items:start}
+.book .hint{font-size:.88rem;color:var(--foam-soft);margin:0}
