@@ -91,8 +91,6 @@ section.services{padding-top:clamp(48px,7vw,90px)}
   display:flex;align-items:center;justify-content:space-between;gap:24px;
   padding-top:22px;padding-bottom:22px;
 }
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-variation-settings:"wdth" 116;font-size:1.15rem;letter-spacing:-.01em}
-.brand svg{width:30px;height:30px}
 .top nav{display:flex;align-items:center;gap:28px}
 .top nav a{text-decoration:none;font-weight:500;color:var(--ink-soft)}
 .top nav a:hover{color:var(--ink)}
@@ -218,7 +216,7 @@ section.services{padding-top:clamp(48px,7vw,90px)}
 footer{
   border-top:1px solid rgba(242,247,246,.14);
   padding-top:28px;margin-top:clamp(64px,8vw,100px);
-  display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;
+  display:flex;flex-wrap:wrap;align-items:center;gap:16px 32px;justify-content:space-between;
   color:var(--foam-soft);font-size:.92rem;
 }
 footer a{text-decoration:none}
@@ -259,7 +257,11 @@ html[data-tone="dark"] .gauge{--g-ink:#F2F7F6;--g-soft:#A9C4C9;--g-line:rgba(242
 @media (prefers-reduced-motion: reduce){.gauge .needle{transition:none}}
 
 /* ---------- brand mark ---------- */
-.brand img{width:34px;height:auto;display:block}
+.brand{display:inline-flex;line-height:0}
+.brand img{height:44px;width:auto;display:block}
+@media (max-width:560px){.brand img{height:34px}}
+.foot-brand{display:inline-flex;line-height:0}
+.foot-brand img{height:40px;width:auto;display:block}
 
 /* ---------- featured + project grid ---------- */
 .shot{

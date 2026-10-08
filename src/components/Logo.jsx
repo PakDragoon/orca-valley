@@ -1,12 +1,12 @@
 import React from "react";
-import mark from "../assets/img/brand/orca-mark.png";
-import markLight from "../assets/img/brand/orca-mark-light.png";
+import logoNavy from "../assets/img/brand/orca-valley-logo-navy.png";
+import logoWhite from "../assets/img/brand/orca-valley-logo-white.png";
 
-export default function Logo({ light = false }) {
+// Full Orca Valley lockup (orca, divider, wordmark). Use `light` on dark backgrounds.
+export default function Logo({ light = false, className = "brand" }) {
   return (
-    <a className="brand" href="#top" aria-label="Orca Valley home">
-      <img src={light ? markLight : mark} alt="" width="34" height="32" />
-      Orca Valley
+    <a className={className} href="#top" aria-label="Orca Valley home">
+      <img src={light ? logoWhite : logoNavy} alt="Orca Valley" width="235" height="52" />
     </a>
   );
 }
