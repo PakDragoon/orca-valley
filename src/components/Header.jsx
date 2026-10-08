@@ -32,7 +32,7 @@ export default function Header() {
 
       <div className="waterline" aria-hidden="true">
         <svg className="fin" viewBox="0 0 74 78">
-          <path d="M2 78C22 72 34 50 40 2c6 30 16 58 32 76z" fill="#0E3140" />
+          <path d="M2 78C22 72 34 50 40 2c6 30 16 58 32 76z" fill="var(--fin)" />
         </svg>
         <svg className="wave" viewBox="0 0 1440 120" preserveAspectRatio="none">
           <path
@@ -42,7 +42,7 @@ export default function Header() {
           <path
             d="M0 62 C 120 50, 240 74, 360 62 S 600 50, 720 62 960 74, 1080 62 1320 50, 1440 62"
             fill="none"
-            stroke="#0E3140"
+            stroke="var(--fin)"
             strokeOpacity=".35"
             strokeWidth="2"
           />

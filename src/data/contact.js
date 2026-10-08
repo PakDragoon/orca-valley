@@ -7,7 +7,7 @@ export const FACEBOOK = "https://www.facebook.com/profile.php?id=61554669862402"
 // Paste your Calendly (or Cal.com) discovery-call link here,
 // e.g. "https://calendly.com/orcavalley/discovery-call".
 // While it's empty, every "Book a discovery call" button opens an email instead.
-export const BOOKING_URL = "";
+export const BOOKING_URL = "https://calendly.com/h-ali-orcavalley/30min";
 
 // Props for any "book a call" link: opens the booking page in a new tab,
 // or falls back to a prefilled email when no booking link is set.
