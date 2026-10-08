@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Logo from "./Logo";
 import { EMAIL, PHONE_DISPLAY, PHONE_TEL, LINKEDIN, FACEBOOK } from "../data/contact";
 
 export default function Contact() {
@@ -77,6 +78,7 @@ export default function Contact() {
         </div>
 
         <footer>
+          <Logo light className="foot-brand" />
           <span>© {new Date().getFullYear()} Orca Valley. Founded 2023.</span>
           <a href="#top">Back to the surface</a>
         </footer>
