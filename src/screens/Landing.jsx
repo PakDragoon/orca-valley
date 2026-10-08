@@ -1,27 +1,23 @@
 import React from "react";
-// Sections
-import TopNavbar from "../components/Nav/TopNavbar";
-import Header from "../components/Sections/Header";
-import Services from "../components/Sections/Services";
-import Projects from "../components/Sections/Projects";
-import Blog from "../components/Sections/Blog";
-import Pricing from "../components/Sections/Pricing";
-import Contact from "../components/Sections/Contact";
-import Footer from "../components/Sections/Footer"
+import DepthGauge from "../components/DepthGauge";
+import Header from "../components/Header";
+import Services from "../components/Services";
+import Process from "../components/Process";
+import Work from "../components/Work";
+import Stack from "../components/Stack";
+import Contact from "../components/Contact";
 
 export default function Landing() {
   return (
     <>
-      <TopNavbar />
+      <a className="skip" href="#main">Skip to content</a>
+      <DepthGauge />
       <Header />
       <Services />
-      <Projects />
-      <Blog />
-      <Pricing />
+      <Process />
+      <Work />
+      <Stack />
       <Contact />
-      <Footer />
     </>
   );
 }
-
-
